@@ -105,12 +105,16 @@ source $ZSH/oh-my-zsh.sh
 
 # System
 alias ll='ls -lth'
+alias sorted='du -sh * | sort -h'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+# Pacman
 alias update='sudo pacman -Syu'
 alias clean='sudo pacman -Scc'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -Rns'
 alias search='sudo pacman -Ss'
-alias sorted='du -sh * | sort -h'
 
 # Tweaks
 alias rm='rm -i'
@@ -118,4 +122,15 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Git
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gpl='git pull'
+alias gl='git log --oneline --graph --all'
+alias gd='git diff'
+alias gco='git checkout'
+alias gb='git branch'
+alias gr='git remote -v'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
