@@ -134,3 +134,4 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gr='git remote -v'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# This is a comment
