@@ -122,16 +122,68 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Git
-alias gs='git status'
+#alias gs='git status'
+#alias ga='git add'
+#alias gc='git commit'
+#alias gcm='git commit -m'
+#alias gp='git push'
+#alias gpl='git pull'
+#alias gl='git log --oneline --graph --all'
+#alias gd='git diff'
+#alias gco='git checkout'
+#alias gb='git branch'
+#alias gr='git remote -v'
+#alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Базовые
+alias g='git'
+alias gst='git status -sb'
 alias ga='git add'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gp='git push'
-alias gpl='git pull'
-alias gl='git log --oneline --graph --all'
-alias gd='git diff'
+alias gaa='git add --all'
+alias gc='git commit -v'
+alias gc!='git commit -v --amend'
 alias gco='git checkout'
+alias gcb='git checkout -b'
 alias gb='git branch'
+
+# История
+alias gl='git log --oneline --graph --decorate'
+alias gla='git log --oneline --graph --decorate --all'
+alias glg='git log --stat'
+alias glp='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate'
+
+# Диффы
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gds='git diff --stat'
+
+# Push/Pull
+alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gpl='git pull'
+alias gpr='git pull --rebase'
+
+# Ветки
+alias gbr='git branch -av'
+alias gbrd='git branch -d'
+alias gbrD='git branch -D'
+
+# Удаленные
 alias gr='git remote -v'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-# This is a comment
+alias gra='git remote add'
+alias grr='git remote remove'
+
+# Stash
+alias gsh='git stash'
+alias gshp='git stash pop'
+alias gshl='git stash list'
+
+# Утилиты
+alias grb='git rebase'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
+alias gm='git merge'
+alias gcl='git clone'
+alias gclean='git clean -fd'
+alias grm='git rm'
+alias grs='git restore'
