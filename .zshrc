@@ -126,7 +126,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Git
-#alias gs='git status'
+alias gs='git status'
 #alias ga='git add'
 #alias gc='git commit'
 #alias gcm='git commit -m'
