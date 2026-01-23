@@ -127,8 +127,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias dir='ncdu'
+alias services='sudo systemctl'
+alias logs='sudo journalctl'
+
 # Git
-alias gs='git status'
 #alias ga='git add'
 #alias gc='git commit'
 #alias gcm='git commit -m'
@@ -143,6 +145,7 @@ alias gs='git status'
 
 # Базовые
 alias g='git'
+alias gs='git status'
 alias gst='git status -sb'
 alias ga='git add'
 alias gaa='git add --all'
