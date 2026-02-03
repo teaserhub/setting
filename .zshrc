@@ -112,6 +112,7 @@ alias ll='ls -lth'
 alias sorted='du -sh * | sort -h'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias err='journalctl -b -p err'
 
 # Pacman
 alias update='sudo pacman -Syu'
