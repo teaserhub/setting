@@ -118,6 +118,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias err='journalctl -b -p err'
 alias warning='journalctl -b -p warning'
+alias dfh='df -h -x tmpfs -x devtmpfs -x efivarfs'
 
 # Pacman
 alias update='sudo pacman -Syu'
